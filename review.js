@@ -21,11 +21,22 @@
 
 // 1.) Declare a variable
 
+var num = 9
+
 // 2.) Change the value of this variable
+
+let num = 6
 
 // 3.) Change the data type of this variable
 
+var num = "six"
+
 // 4.) Create another variable and the one from above to concatenate
+
+var fruits = "mango" 
+
+
+
 
 // 5.) Use any of the variables above or create new ones and print using string interpolation
 
