@@ -29,6 +29,31 @@
 
 // 5.) Use any of the variables above or create new ones and print using string interpolation
 
+// 1.) Declare a variable
+
+let myVariable = 9;
+
+// 2.) Change the value of this variable
+
+myVariable = 6;
+
+// 3.) Change the data type of this variable
+
+myVariable = "six";
+
+// 4.) Create another variable and the one from above to concatenate
+
+let anotherVariable = "this is a new variable." ;
+
+let concatenateBoth = myVariable + anotherVariable ;
+
+
+// 5.) Use any of the variables above or create new ones and print using string interpolation
+
+console.log(`myVariable: ${myVariable}`);
+
+console.log(`anotherVariable: ${anotherVariable}`);
+
 // ================ Variable Names =================
 /* 
     • Case-sentive! Try it out! :O
