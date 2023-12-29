@@ -21,16 +21,6 @@
 
 // 1.) Declare a variable
 
-// 2.) Change the value of this variable
-
-// 3.) Change the data type of this variable
-
-// 4.) Create another variable and the one from above to concatenate
-
-// 5.) Use any of the variables above or create new ones and print using string interpolation
-
-// 1.) Declare a variable
-
 let myVariable = 9;
 
 // 2.) Change the value of this variable
@@ -70,67 +60,142 @@ console.log(`anotherVariable: ${anotherVariable}`);
 
 // Using charAt(), print the letter i in Sabrina
 
+let word = "sabrina";
+let char = word.charAt(4);
+console.log(char)
+
 // Define Unicode in a comment, and get the Unicode using charCodeAt() of the third character in Teddy
 
+// Unicode: is an international character encoding standard that provides a unique number for every 
+// character across languages and scripts, making almost all characters accessible across
+//  platforms, programs, and devices.
+
+let word = "Teddy"
+let char = word.charCodeAt(3)
+console.log(char)
+
 // Using fromCharCode() - make it readable for us :). You'll see!
+let char1 = String.fromCharCode(100);
+console.log(char1);
+
 
 // Take your first and last name and concat()
 
+let firstName = "Yolande";
+let lastName = "Djampou";
+let text = firstName.concat(" ", lastName);
+console.log(text);
+
 // Create a string and make it return true using startsWith()
+
+let sentence = "Because of you i will face tomorrow.";
+let result = sentence.startsWith("Because");
+console.log(result);
 
 // Now use any variable with endsWith() and return false
 
+let sentence1 = "Because of you i will face tomorrow.";
+let result1 = sentence1.endsWith("tomorrow");
+console.log(result1);
+
 // Finish the following sentence. Use includes() and return true.
-const ozgur = 'Once upon a time Ozgur looked up at the Moon, '
+const ozgur = 'Once upon a time Ozgur looked up at the Moon, and tought it was beautiful';
+let result = ozgur.includes("beautiful");
+console.log(result)
 
 // Help! I'm looking for my cow! Using indexOf() help Josh find his cow. What's the index of cow?
-const joshHadALittleLambOopsCow = "Josh lives in a farm. Josh was overwhelmed with coding. Josh is stressed out. Josh fed the chickens this morning. He watered his plants. He took his cow Betsy on a walk. Josh went home without Betsy. Josh went to bed that night, and realized he went home alone."
+const joshHadALittleLambOopsCow = "Josh lives in a farm. Josh was overwhelmed with coding. Josh is stressed out.Josh fed the chickens this morning. He watered his plants. He took his cow Betsy on a walk. Josh went home without Betsy. Josh went to bed that night, and realized he went home alone."
+let index = joshHadALittleLambOopsCow.indexOf("cow");
+console.log(index);
 
 // Oh no! The alien doppelgangers are here. Let's use our laserbeam lastIndexOf() to shoot down the last alien named Vanessa in the String Universe.
-
 const vanessa = "I am the Alpha Vanessa. I am the Omega Vanessa. We do not come in peace."
+let lastIndex = vanessa.lastIndexOf("Vanessa");
+console.log(lastIndex);
 
-// Can we use length for strings? I don't know, you tell me.
+// Can we use length for strings? I don't know, you tell me. yes we can use length.
 const noWeCantTeo = "but did you try it out though?"
+let length = noWeCantTeo.length;
+console.log(length);
 
 // If only it was this easy to replace() my ex. Totally not joking, LOL. JK
 const replaceGokuWithVegeta = "For my DBZ fans, we all know Goku is the best!"
+let replace = replaceGokuWithVegeta.replace("DBZ", "JK");
+console.log(replace);
 
 // Josh has been forgetful lately. Let's help Josh by using search(), and find their right 'wifey'. 
 const joshIsLookingForWifey = "WIFEY 1, wifey 2, WiFeY 3, Wifey 4"
+let search = joshIsLookingForWifey.search("wifey")
+console.log(search);
 
 // I guess we can share this pizza sentence. Use slice() to return the other half of pizza.
 const pizzaSentence = "pizza, other half of pizza"
+let slice = pizzaSentence.slice(6,26);
+console.log(slice)
 
 // Now using the pizza sentence, return only pizza (before the comma)
+let slice1 = pizzaSentence.slice(0,5);
+console.log(slice1)
 
-// Okay, but who decided to go to this expensive restaurant? Yaz, Poornima, and Leshawn decided to split() the bill. Return an array separating Yaz, Poornima, and Leshawn.
+Okay, but who decided to go to this expensive restaurant? Yaz, Poornima, and Leshawn decided to split() the bill. 
+Return an array separating Yaz, Poornima, and Leshawn.
 const splitTheBill = "Yaz, Poornima, and Leshawn"
+let split = splitTheBill.split(",");
+console.log(split);
 
-// OH NO! The alien invaders from earlier were so against bill splitting so they decided to split() Yaz, Poornima, and Leshawn into pieces. Using splitTheBill, return an array separating all three by characters.
+
+// OH NO! The alien invaders from earlier were so against bill splitting so they decided to split() Yaz, Poornima, and Leshawn into pieces.
+//  Using splitTheBill, return an array separating all three by characters.
+const splitTheBill = "Yaz, Poornima, and Leshawn"
+let split = splitTheBill.split("");
+console.log(split);
+
 
 // Use this toLowerCase()
 const angry = "LOWER YOUR VOICE DOWN IF YOU AIN'T PAYING MY BILLS."
-// Tuan was angry today. Create a string with words that Tuan would yell out. Now lowercase it, to tell Tuan to chill out. 
+let toLowerCase = angry.toLocaleLowerCase();
+console.log(toLowerCase);
 
-// toUpperCase()
+// Tuan was angry today. Create a string with words that Tuan would yell out. Now lowercase it, to tell Tuan to chill out. toUpperCase()
 const jahlunSaidToPutSomeRespectToHisName = "jahlun"
+ let toUpperCase = jahlunSaidToPutSomeRespectToHisName.toUpperCase();
+ console.log(toUpperCase);
 
-// substring()
-// on the chopping block...
+
+// substring() on the chopping block...
+let text = "on the chopping block..."
+let substring = text.substring(3,6);
+console.log(substring);
 
 // Returns "ell"
 const basicGreeting = "Hello World"
+let substring = basicGreeting.substring(1,4);
+console.log(substring)
 
 // Returns "JavaScript"
 const ohReally = "JavaScript Substring"
+let substring = ohReally.substring(0,10);
+console.log(substring)
 
 // Returns aol.com
 const aslDays = "xXteoWuzHereXx@aol.com"
+let slice = aslDays.slice(-7);
+console.log(slice)
 
 // trim()
 // If only I can use this for my love handles...
 // Create a variable with a string value with some extra loving on both sides.
+let variableWithExtraLoving = "         If only I can use this for my love handles.           ";
+let trim = variableWithExtraLoving.trim();
+console.log(trim);
+
+
+
+
+
+
+
+
 
 // =================================================
 //                     BOOLEAN
