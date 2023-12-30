@@ -396,14 +396,63 @@ const donutShop =[
 // Teo is a person. I would hope so...
 
 // Check if Teo is a person. If true, print 'Teo is a person!' if not then print 'Teo is not a person!'
+let personName = "Teo";
+if(personName === "Teo"){
+  console.log('Teo is a person!');
+}
+else{
+  console.log('Teo is not a person!');
+}
 
 // If Teo is a person, check to see if he is a male or a female. If male, print 'You got it right!' if not then print 'Wrong. 
+
+let personName = "Teo";
+let personGender = "male";
+if(personName === "Teo"){
+ if(personGender === "male"){
+  console.log('Teo is a person!');
+  console.log('You got it right!');
+}
+else{
+  console.log('wrong')
+}
+}else{
+    console.log('Teo is not a person!');
+  }
+
+
 // Teo is going to remove you from the class.'.
 
 // If male, check to see if Teo is hungry. If Teo is 'hungry' then print 'Let's buy Teo some tacos!'. If Teo is 'not hungry' 
 // then print 'He doesn't need to eat.'. Anything else, print 'If Teo is not hungry, am I hungry?'
+let personName = "Teo";
+let personGender = "male";
+let personHunger ="hungry"
+if(personName === "Teo"){
+ if(personGender === "male"){
+  if(personHunger === "hungry"){
+    console.log('Teo is a person!');
+    console.log('You got it right!');
+    console.log("Let's buy Teo some tacos!");
+  }else{
+    console.log("He doesn't need to eat." )
+  }
+}}
+else{
+  console.log('If Teo is not hungry, am I hungry?')
+}
+
 
 // Create a if/else ternary to check if Gustavo is the coolest. If coolest, print 'You got that right!', else print 'James wants to argue. He says he's the best!'
+
+let coolestPerson = "Gustavo";
+if(coolestPerson === "Gustavo"){
+console.log('You got that right!')
+}
+else{
+  console.log("James wants to argue. He says he's the best!")
+}
+
 
 // =================================================
 //                     FUNCTIONS
