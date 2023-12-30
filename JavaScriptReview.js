@@ -225,11 +225,39 @@ console.log(c - b !== a * d.length);
 //                     LOOPS
 // =================================================
 
-// Ken has a headache today and he said the room has been spinning like crazy. Make Ken's room spin 10 times using FOR LOOP. Make him print a sentence.
+// Ken has a headache today and he said the room has been spinning like crazy. 
+// Make Ken's room spin 10 times using FOR LOOP. 
+
+let text = " ";
+for(let i = 1; i<= 10; i++){
+  text +=  i + " ";
+}
+console.log(text);
+
+// Make him print a sentence.
+
+let text = " ";
+for(let i = 1; i<= 10; i++){
+  text +=  i + " = " + "my head is spinning" + "\n " ;
+}
+console.log(text);
 
 // Harry said that was so mean of Teo to do Ken dirty like that. Make Teo's vision spin 20 times FOR LOOP.
 
+for (let i=1; i<=20; i++ ){
+  console.log(i)
+}
+
+
 // But wait! Lisa said, while Teo is spinning 20 times. Let's make him say "I'm sorry". Print I'm sorry 20 times using a WHILE loop.
+
+let sorry = " ";
+let i = 1
+while (i<=20){
+  sorry += "I'm sorry: " + i + " time " + "\n"
+  i++
+}
+console.log(sorry)
 
 // For the next three, look for the syntax of FOR IN and FOR OF loop. Very easy to understand syntax, and very clean :) 
 
@@ -240,15 +268,37 @@ const whateverQueenBeySaid = {
   thing3: 'gaming console'
 }
 
+let text = " ";
+for(let x in whateverQueenBeySaid){
+  text += whateverQueenBeySaid[x] + ", "
+}
+console.log(text)
+
 // Using (FOR IN LOOP), print the indexes of the array.
 const lana = ['l', 'a', 'n', 'a']
+
+for(let index in lana){
+  console.log(index)
+}
 
 // USE (FOR OF LOOP)!
 const tia = ['teo', 'the', 'syntax', 'of', 'this', 'is', 'cleaner']
 
+for(let index of tia){
+  console.log(index)
+}
+
 // Look into forEach() loop, it accepts a callback aka a function inside a function. 
 // Swathi said don't forget each person. No person left behind! Use forEach() to iterate over the array perscholas. Inside the function, create a variable with the string "PS". Print their name in the console concatenated with the variable. 
 const perscholas = ['Amira', 'Arely', 'Jonathan']
+
+perscholas.forEach(function(perschola){
+  let PS = "Swathi said don't forget "
+  let concat = PS.concat(" ", perschola);
+  console.log(concat)
+});
+
+
 
 // =================================================
 //                     ARRAYS
@@ -452,7 +502,7 @@ console.log('You got that right!')
 else{
   console.log("James wants to argue. He says he's the best!")
 }
-
+     
 
 // =================================================
 //                     FUNCTIONS
