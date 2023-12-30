@@ -52,6 +52,8 @@ console.log(`anotherVariable: ${anotherVariable}`);
     • Can't use reserved keywords in JS such as var, function, return, etc. 
 */
 
+
+
 // =================================================
 //                      STRINGS
 // =================================================
@@ -215,6 +217,10 @@ console.log(a < 15)
 console.log(a < b < c)
 console.log(c - b !== a * d.length);
 
+
+
+
+
 // =================================================
 //                     LOOPS
 // =================================================
@@ -249,47 +255,86 @@ const perscholas = ['Amira', 'Arely', 'Jonathan']
 // =================================================
 
 // Look up the following: Make a note of what each one of these methods do
-// push()
-// pop()
-// unshift()
-// shift()
-// concat()
-// splice()
-// slice()
-// sort()
-// includes()
-// indexOf()
-// length
+
+// push(): Adds one or more elements to the end of an array and returns the new length of the array.
+
+// pop(): Removes the last element from an array and returns that element. This method modifies the array.
+
+// unshift(): Adds one or more elements to the beginning of an array and returns the new length of the array.
+
+// shift(): Removes the first element from an array and returns that element. This method modifies the array.
+
+// concat(): Combines two or more arrays, creating a new array without modifying the existing arrays.
+
+// splice(): Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+
+// slice(): Returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included).
+
+// sort(): Sorts the elements of an array in place and returns the sorted array. The default sort order is built upon converting the 
+//          elements into strings and comparing their sequences of UTF-16 code units.
+
+// includes(): Checks if an array includes a certain element and returns true or false accordingly.
+
+// indexOf(): Returns the first index at which a given element can be found in the array, or -1 if it is not present.
+
+// length: Property of an array that returns or sets the number of elements in that array. It represents the length or size of the array
+
 
 const fruits = ['apple', 'banana', 'orange']
 
 // Print banana
+let fruit = fruits[1];
+console.log(fruit);
 
 // Let's turn it up a notch. I won't tell you what array methods to use. 
 
 // Join all the elements of the array into a string separated by a space.
+let join = fruits.join(" ");
+console.log(join);
 
 // Remove orange
+console.log(fruits.pop());
+console.log(fruits);
 
-// Add strawberry, kiwi, and grapes at the end
+// Add strawberry, kiwi, and grapes at the end.
+console.log(fruits.push("strawberry", "kiwi", "grapes"));
+console.log(fruits);
 
 // Remove apple
+console.log(fruits.shift());
+console.log(fruits);
 
 // Add mango at the beginning of the array
+console.log(fruits.unshift("mango"));
+console.log(fruits);
 
 // Add lemon, and grapefruit between mango and banana
+console.log(fruits.splice(0, 1,"mango", "lemon", "grapefruit"));
+console.log(fruits);
 
 // Remove banana and strawberry
+console.log(fruits.splice(1, 1));
+console.log(fruits);
 
-// Create a new array called exoticFruits. Add 3 exotic fruits inside of this array. Create a new variable and assign it with the value of concatinating fruits array and exoticFruits array.
+// Create a new array called exoticFruits. Add 3 exotic fruits inside of this array.
+let exoticFruits = ["pinaple", "papaya", "tangerine"]
+
+//  Create a new variable and assign it with the value of concatinating fruits array and exoticFruits array.
+let concat = fruits.concat(exoticFruits);
+console.log(concat);
 
 // Print the last two exotic fruits without altering the newly concatenated array.
+console.log(concat.slice(-2));
+console.log(concat);
+
 
 // Monalissa said she needs help re-organizing her items in alphabetical order.
 const monalissaIsMessy = ["pencil", "paper", "notebook", "computer"]
+console.log(monalissaIsMessy.sort());
 
 // Kevin accidentally stepped into the mirror world and needs help reversing his words.
 const mirrorMirrorOnTheWall = ["all", "them", "of", "greatest", "the", "is", "who"]
+console.log(mirrorMirrorOnTheWall.reverse());
 
 // ===== HIGHER ORDER METHODS =====
 // Rafael said he''s trying to stop cursing so much, and he wants to start with his text messages. Help him write code to eliminate the badword in his sentences. Must return a string sentence. Must use filter(). :) 
@@ -297,6 +342,10 @@ const RafaelNoBadWords = "I am so tired of this badword food. I do not want this
 
 // Man math is hard. Let's make our computer do it for us. Use reduce() to find the total of the numbers in numbersToAddUp
 const numbersToAddUp = [99, 5677, 232, 84, 2, 231]
+
+
+
+
 
 // ===== SPREAD OPERATOR ===== 
 
@@ -307,6 +356,8 @@ const numbersToAddUp = [99, 5677, 232, 84, 2, 231]
 // Using the variable with the newly connected arrays, use spread operator to add something at the end.
 
 // Using the variable with the newly connected arrays, use spread operator to add something at the beginning.
+
+
 
 // ===== ACCESS =====
 
@@ -335,14 +386,22 @@ const donutShop =[
 // Anthony wants applecrumble. Print please!
 // Tosi wants ihatethis. :) Print!
 
+
+
+
 // =================================================
 //                     IF/ELSE
 // =================================================
 
 // Teo is a person. I would hope so...
+
 // Check if Teo is a person. If true, print 'Teo is a person!' if not then print 'Teo is not a person!'
-// If Teo is a person, check to see if he is a male or a female. If male, print 'You got it right!' if not then print 'Wrong. Teo is going to remove you from the class.'.
-// If male, check to see if Teo is hungry. If Teo is 'hungry' then print 'Let's buy Teo some tacos!'. If Teo is 'not hungry' then print 'He doesn't need to eat.'. Anything else, print 'If Teo is not hungry, am I hungry?'
+
+// If Teo is a person, check to see if he is a male or a female. If male, print 'You got it right!' if not then print 'Wrong. 
+// Teo is going to remove you from the class.'.
+
+// If male, check to see if Teo is hungry. If Teo is 'hungry' then print 'Let's buy Teo some tacos!'. If Teo is 'not hungry' 
+// then print 'He doesn't need to eat.'. Anything else, print 'If Teo is not hungry, am I hungry?'
 
 // Create a if/else ternary to check if Gustavo is the coolest. If coolest, print 'You got that right!', else print 'James wants to argue. He says he's the best!'
 
@@ -372,14 +431,14 @@ const donutShop =[
 
 // Create an arrow function that accepts a number and have it return that number doubled
 
+
+
+
 // =================================================
 //                     OBJECTS
 // =================================================
 
 // Create an object and call it human. Add a name, age, and location property. Give the properties values.
-
-
-
 
 // Access the name using dot notation
 
