@@ -300,6 +300,7 @@ perscholas.forEach(function(perschola){
 
 
 
+
 // =================================================
 //                     ARRAYS
 // =================================================
@@ -386,6 +387,8 @@ console.log(monalissaIsMessy.sort());
 const mirrorMirrorOnTheWall = ["all", "them", "of", "greatest", "the", "is", "who"]
 console.log(mirrorMirrorOnTheWall.reverse());
 
+
+
 // ===== HIGHER ORDER METHODS =====
 // Rafael said he''s trying to stop cursing so much, and he wants to start with his text messages. Help him write code to eliminate the badword in his sentences. Must return a string sentence. Must use filter(). :) 
 const RafaelNoBadWords = "I am so tired of this badword food. I do not want this badword badword food."
@@ -433,6 +436,8 @@ console.log("Array with Something Added at the Beginning:", newArrayWithStart);
 
 
 
+
+
 // ===== ACCESS =====
 
 // Donut Shopping
@@ -464,6 +469,8 @@ console.log("Anthony wants", donutShop[1][0][1]);
 // Tosi wants ihatethis. :) Print!
 
 console.log("Tosi wants", donutShop[2][0][0][1][0]);
+
+
 
 
 
@@ -531,6 +538,9 @@ else{
   console.log("James wants to argue. He says he's the best!")
 }
      
+
+
+
 
 // =================================================
 //                     FUNCTIONS
