@@ -610,44 +610,66 @@ function sayGreetting(){
 
 // Create an object and call it human. Add a name, age, and location property. Give the properties values.
 
+let human = {
+  name: "Yolande",
+  age: 21,
+  location: "Methuen"
+};
+
 // Access the name using dot notation
 
+console.log(human.name);
 
 // Access the age using square brackets
 
+console.log(human["age"]);
+
 // Use object destructuring to access location
+
+const { location } = human;
+console.log(location);
 
 // ACCESS Granted
 const bulbasaur = {
-  name: 'Bulbasaur',
-  abilities: [
-    {
-      ability: 'overgrow'
-    },
-    {
-      ability: 'chlorophyll'
-    }
-  ],
-  moves: ['razor-wind', 'swords-dance', 'cut'],
-  sound: function () {
-    console.log('Bulbahhhh!!!!!')
+name: 'Bulbasaur',
+abilities: [
+  {
+    ability: 'overgrow'
+  },
+  {
+    ability: 'chlorophyll'
   }
+],
+moves: ['razor-wind', 'swords-dance', 'cut'],
+sound: function () {
+  console.log('Bulbahhhh!!!!!')
+}
 }
 
 // Print overgrow
+console.log(bulbasaur.abilities[0].ability);
 
 // Print cut
-
+console.log(bulbasaur.moves[2])
 
 // Print Bulbahhhh!!!!!
-
+bulbasaur.sound()
 
 // Add a height of 7 to bulbasaur using the dot notation. (Don't change bulbasaur object manually)
+bulbasaur.height = 7;
 
 // Add a property called order and assign it a value of 1 using the square brackets. (Don't change bulbasaur object manually)
+bulbasaur['order'] = 1;
 
 // Print an array that contains every single properties in bulbasaur
+const propertiesArray = Object.keys(bulbasaur);
+console.log(propertiesArray);
 
 // Print every single properties one by one in the console
+propertiesArray.forEach(property => {
+  console.log(property);
+})
 
 // Print an array that contains every single values in bulbasaur
+const valuesArray = Object.values(bulbasaur);
+console.log(valuesArray);
