@@ -449,8 +449,12 @@ const donutShop =[
 ]
 
 // Anthony wants applecrumble. Print please!
+  
+console.log("Anthony wants", donutShop[1][0][1]);
+  
 // Tosi wants ihatethis. :) Print!
 
+console.log("Tosi wants", donutShop[2][0][0][1][0]);
 
 
 
