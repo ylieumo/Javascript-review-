@@ -401,11 +401,26 @@ const numbersToAddUp = [99, 5677, 232, 84, 2, 231]
 
 // Create a variable and assign a value of a copied array using the spread operator
 
+const originalArray = [1, 2, 3, 4, 5];
+const copiedArray = [...originalArray];
+console.log("Copied Array:", copiedArray);
+
 // Create two arrays with any elements and connect both of them using the spread operator. Save the connected arrays into a new variable.
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const connectedArrays = [...array1, ...array2];
+console.log("Connected Arrays:", connectedArrays);
 
 // Using the variable with the newly connected arrays, use spread operator to add something at the end.
 
+const newArrayWithEnd = [...connectedArrays, 7, 8]
+console.log("Array with Something Added at the End:", newArrayWithEnd);
+
 // Using the variable with the newly connected arrays, use spread operator to add something at the beginning.
+
+const newArrayWithStart = [0, ...connectedArrays];
+console.log("Array with Something Added at the Beginning:", newArrayWithStart);
 
 
 
