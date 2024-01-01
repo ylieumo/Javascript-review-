@@ -390,8 +390,17 @@ console.log(mirrorMirrorOnTheWall.reverse());
 // Rafael said he''s trying to stop cursing so much, and he wants to start with his text messages. Help him write code to eliminate the badword in his sentences. Must return a string sentence. Must use filter(). :) 
 const RafaelNoBadWords = "I am so tired of this badword food. I do not want this badword badword food."
 
+let filter = "badword";
+const myFilter = RafaelNoBadWords.split(' ').filter(word => word !== filter).join(' ');
+console.log("Filtered Sentence:", myFilter);
+
+
 // Man math is hard. Let's make our computer do it for us. Use reduce() to find the total of the numbers in numbersToAddUp
-const numbersToAddUp = [99, 5677, 232, 84, 2, 231]
+const numbersToAddUp = [99, 5677, 232, 84, 2, 23]
+
+const total = numbersToAddUp.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+console.log("Total of Numbers is", total);
 
 
 
