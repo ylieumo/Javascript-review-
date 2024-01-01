@@ -511,24 +511,95 @@ else{
 // Don't forget to call your functions :)
 
 // Create a function called sayGreeting and PRINT 'Hello, ma'amsir!'
-
-// Create a function that takes a string as a parameter. PRINT 'This is my (STRING)'. Please replace the (STRING) with the parameter. Don't play with me haha.
-
-
-// Create a function called add that takes in three number parameters. Create 3 variables and assign numerical values to them. Invoke your add() and pass in those three variables as arguments.
-
-// Create a function called fightClub() that accepts a name parameter.  If the name:
-// 'Teo' RETURN '1st rule: You do not talk about Fight Club.'
-// 'Manara' RETURN '2nd rule: YOU DO NOT TALK ABOUT FIGHT CLUB.'
-// 'Liv' RETURN '3rd rule: If someone yells "Stop!", goes limp, taps out, the fight is over.'
-// 'Devin' RETURN '4th rule: Only two guys to a fight.'
-// Anything else, RETURN 'No shirts
-
-// Create a function called hello() that prints 'Hello'. Return an anonymous function inside hello() and have it print 'Goodbye'. Invoke your hello function in some way to see Hello and Goodbye in the console.
-
-// Create a function expression with your first name as the variable and then print your first and last name
-
-// Create an arrow function that accepts a number and have it return that number doubled
+function sayGreetting(){
+  console.log("Hello, ma'amsir!");
+  }
+  sayGreetting();
+  
+  // Create a function that takes a string as a parameter. PRINT 'This is my (STRING)'.
+  //  Please replace the (STRING) with the parameter. Don't play with me haha.
+  
+  function printMessage(string){
+    return string;
+  }
+  var message = "The is my (STRING)";
+  var displayMessage = printMessage(message);
+  console.log(displayMessage);
+  
+  var message = "Don't play with me haha.";
+  var displayMessage =printMessage(message);
+  console.log(displayMessage);
+  
+  
+  // Create a function called add that takes in three number parameters. 
+  // Create 3 variables and assign numerical values to them. Invoke your add() and pass in those three variables as arguments.
+  
+  function add(a, b, c){
+    return a + b + c 
+  }
+  var result = add(5,7,3);
+  console.log(result)
+  
+  // Create a function called fightClub() that accepts a name parameter.  If the name:
+  // 'Teo' RETURN '1st rule: You do not talk about Fight Club.'
+  // 'Manara' RETURN '2nd rule: YOU DO NOT TALK ABOUT FIGHT CLUB.'
+  // 'Liv' RETURN '3rd rule: If someone yells "Stop!", goes limp, taps out, the fight is over.'
+  // 'Devin' RETURN '4th rule: Only two guys to a fight.'
+  // Anything else, RETURN 'No shirts
+  
+  function fightClub(name){
+    if (name =='Teo'){
+      return "1st rule: you do not takl about fight club ";
+    }else if(name == 'manara'){
+      return "2nd rule: YOU DO NOT TALK ABOUT FIGHT CLUB";
+    }else if (name == 'Liv'){
+      return "3rd rule: If someone yells stop!, goes limo, taps out, the fight is over.";
+    }else if (name == 'devine'){
+      return "4th rule: Only two gyus to a fight";
+    }else {
+      return "no shirts";
+    }
+  }
+  var result = fightClub("name"); 
+  console.log(result)
+  
+  
+  // Create a function called hello() that prints 'Hello'.
+  //  Return an anonymous function inside hello() and have it print 'Goodbye'.
+  //  Invoke your hello function in some way to see Hello and Goodbye in the console.
+  
+  function hello(){
+    console.log("Hello");
+   return function(){
+    console.log("Goodbye")
+    }
+    ();
+     return function(greet){
+    console.log(greet, "Goodbye")
+    }
+    ("Hello,");
+  }
+  
+  hello()
+  
+  // Create a function expression with your first name as the variable and then print your first and last name
+  
+  function myName(firstName){
+   console.log("Djampou");
+   return firstName +"  "+ "Djampou"
+  }
+   let message = myName("Yolande");
+  
+  console.log(message)
+  
+  // Create an arrow function that accepts a number and have it return that number doubled
+  
+  let myFunction = (a) =>  a * 2;
+  
+  let double = myFunction(5)
+  console.log(double)
+  
+  
 
 
 
